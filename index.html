@@ -5,13 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- google font mulish -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- google font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-mulish{
+            font-family: "Mulish", sans-serif;
+        }
+        .font-inter{
+            font-family: "Inter", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-mulish">
+    <header class="mx-auto container">
+        <!-- navbar component -->
+        <section>
+            <div class="navbar bg-base-100 my-5">
+                <div class="flex-1">
+                    <a class="btn btn-ghost text-4xl font-black text-[#12132D]">ReTro</a>
+                </div>
+                <div class="flex-none">
+                    <ul class="menu menu-horizontal px-1 pr-3">
+                        <div class="tooltip pr-3" data-tip="hello">
+                            <button class="btn rounded-full border-slate-200"><img src="./images/icon/Frame.png"
+                                    alt=""></button>
+                        </div>
+                        <div class="tooltip pr-3" data-tip="hello">
+                            <button class="btn rounded-full border-slate-200"><img src="./images/icon/Frame (1).png"
+                                    alt=""></button>
+                        </div>
+                        <div class="tooltip pr-3" data-tip="hello">
+                            <button class="btn rounded-full border-slate-200"><img src="./images/icon/Frame (3).png"
+                                    alt=""></button>
+                        </div>
+                        <div class="tooltip pr-3" data-tip="hello">
+                            <button class="btn rounded-full border-slate-200"><img src="./images/icon/Frame (4).png"
+                                    alt=""></button>
+                        </div>
+                        <div class=" pr-3">
+                            <button class="btn rounded-full border-slate-200  px-10 bg-[#797DFC] text-white text-xl font-bold">Sign
+                                In</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="mx-auto container">
+       
+    </main>
+    <footer class="mx-auto container">
+
+    </footer>
     <script src="./index.js"></script>
 </body>
 
