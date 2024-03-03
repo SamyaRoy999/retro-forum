@@ -24,10 +24,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .font-mulish{
+        .font-mulish {
             font-family: "Mulish", sans-serif;
         }
-        .font-inter{
+
+        .font-inter {
             font-family: "Inter", sans-serif;
         }
     </style>
@@ -37,42 +38,85 @@
     <header class="mx-auto container">
         <!-- navbar component -->
         <section>
-            <div class="navbar bg-base-100 my-5">
-                <div class="flex-1">
-                    <a class="btn btn-ghost text-4xl font-black text-[#12132D]">ReTro</a>
+            <div class="flex flex-col lg:flex-row justify-between text-center bg-base-100 my-8">
+                <div class="">
+                    <a class="btn btn-ghost text-4xl font-black  text-[#12132D]">ReTro</a>
                 </div>
                 <div class="flex-none">
-                    <ul class="menu menu-horizontal px-1 pr-3">
+                    <ul class="flex justify-between flex-col lg:flex-row px-1 pr-3 gap-3">
                         <div class="tooltip pr-3" data-tip="hello">
-                            <button class="btn rounded-full border-slate-200"><img src="./images/icon/Frame.png"
+                            <button class="btn  rounded-full w-full border-slate-200"><img src="./images/icon/Frame.png"
                                     alt=""></button>
                         </div>
                         <div class="tooltip pr-3" data-tip="hello">
-                            <button class="btn rounded-full border-slate-200"><img src="./images/icon/Frame (1).png"
+                            <button class="btn rounded-full
+                            w-full border-slate-200  "><img src="./images/icon/Frame (1).png"
                                     alt=""></button>
                         </div>
                         <div class="tooltip pr-3" data-tip="hello">
-                            <button class="btn rounded-full border-slate-200"><img src="./images/icon/Frame (3).png"
+                            <button class="btn rounded-full
+                            w-full border-slate-200"><img src="./images/icon/Frame (3).png"
                                     alt=""></button>
                         </div>
                         <div class="tooltip pr-3" data-tip="hello">
-                            <button class="btn rounded-full border-slate-200"><img src="./images/icon/Frame (4).png"
+                            <button class="btn rounded-full w-full border-slate-200"><img src="./images/icon/Frame (4).png"
                                     alt=""></button>
                         </div>
                         <div class=" pr-3">
-                            <button class="btn rounded-full border-slate-200  px-10 bg-[#797DFC] text-white text-xl font-bold">Sign
+                            <button
+                                class="btn rounded-full
+                                w-full border-slate-200  px-10 bg-[#797DFC] text-white text-xl font-bold">Sign
                                 In</button>
                         </div>
                     </ul>
                 </div>
             </div>
         </section>
+        <!-- banner section -->
+        <section class="bg-[#12132D] bg-no-repeat bg-bottom p-10 lg:p-20 rounded-3xl" style="background-image: url('/images/bgbanner.png');">
+            <div class="flex flex-col lg:flex-row justify-between ">
+                <div>
+                    <h3 class="text-3xl lg:text-6xl font-black leading-tight text-white">Welcome to the <br><span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-indigo-600">ReTro</span>
+                        Forum</h3>
+
+                    <p class="font-medium lg:text-xl text-white py-5">Share your favorite opinion and win and <br> wp forum coffee mug!</p>
+                    <div>
+
+                        <form action="" class="relative rounded-full lg:w-[400px]">
+                            <input type="text" placeholder=" Search here anything" class="input input-bordered rounded-full w-full max-w-[400px] py-7" />
+                            <button type="submit"
+                            class="btn absolute end-2.5 top-1  rounded-full border-slate-200  lg:px-8 bg-[#797DFC] text-white lg:text-lg font-bold ">Sign
+                            In</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="flex rounded-3xl mt-5  p-12 text-[#12132DCC] lg:text-2xl font-medium gap-14 bg-white">
+                    <div class="">
+                        <h5 class="py-2">Registered Users</h5>
+                        <h5 class="py-2">Forum</h5>
+                        <h5 class="py-2">Topics</h5>
+                        <h5 class="py-2">Replies</h5>
+
+                    </div>
+                    <div class="">
+                        <h5 class="py-2">01</h5>
+                        <h5 class="py-2">05</h5>
+                        <h5 class="py-2">01</h5>
+                        <h5 class="py-2">01</h5>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
     </header>
     <main class="mx-auto container">
-       
+
     </main>
     <footer class="mx-auto container">
-
+       
     </footer>
     <script src="./index.js"></script>
 </body>
