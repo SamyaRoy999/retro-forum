@@ -15,13 +15,14 @@ const AllCard = (allData) => {
         div.innerHTML = `<div
         class="card lg:card-side mb-5 md:h-[277px] lg:h-[277px]  bg-base-100 shadow-xl border border-cyan-950 p-4 lg:p-7">
         <div>
-
-            <div class="avatar online">
-                <div class="w-24 rounded-full">
-                    <img
-                        src="${item.image}" />
-                </div>
+            <div class="avatar relative">
+                <div class="  ${item.isActive ? 'bg-green-600' : ' bg-red-600 '} h-4 w-4 rounded-full absolute right-0 bottom-16 border border-neutral-50">
             </div>
+            <div class="w-24 rounded-full">
+                <img src="${item.image}" />
+            </div>
+        </div>
+
         </div>
         <div class="card-body">
             <div class="flex">
@@ -58,9 +59,9 @@ const AllCard = (allData) => {
 }
 let count = 1;
 const hendelClick = (title, view) => {
-    const incount = count ++;
+    const incount = count++;
     const increment = document.getElementById('increment')
-    increment.innerHTML = `<p>(${incount})</p>`
+    increment.innerHTML = `<p class="text-base font-normal">(${incount})</p>`
     console.log(count);
     console.log(title, view);
     const titleViewShow = document.getElementById("title-view");
