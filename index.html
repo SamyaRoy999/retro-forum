@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AnTique Forum</title>
     <!-- google font mulish -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +40,7 @@
         <section>
             <div class="flex flex-col lg:flex-row justify-between text-center bg-base-100 my-8">
                 <div class="">
-                    <a class="btn btn-ghost text-4xl font-black  text-[#12132D]">ReTro</a>
+                    <a class="btn btn-ghost text-4xl font-black  text-[#12132D]">AnTique</a>
                 </div>
                 <div class="flex-none">
                     <ul class="flex justify-between flex-col lg:flex-row px-1 pr-3 gap-3">
@@ -75,18 +75,18 @@
             <div class="flex flex-col lg:flex-row justify-between ">
                 <div>
                     <h3 class="text-3xl lg:text-6xl font-black text-white">Welcome to the <br><span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-indigo-600">ReTro</span>
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-indigo-600">AnTique</span>
                         Forum</h3>
 
                     <p class="font-medium lg:text-xl text-white py-10">Share your favorite opinion and win and <br> wp
                         forum coffee mug!</p>
                     <div>
-                        <div action="" class="relative rounded-full lg:w-[400px]">
+                        <form action="" class="relative rounded-full lg:w-[400px]">
                             <input type="text" id="search-input" placeholder=" Search here anything"
                                 class="input input-bordered rounded-full w-full max-w-[400px] py-7" />
                             <button onclick="searchHebndel()"
                                 class="btn absolute end-2.5 top-1  rounded-full border-slate-200  lg:px-8 bg-[#797DFC] text-white lg:text-lg font-bold ">Search</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
 
@@ -132,21 +132,21 @@
 
                             </div>
                         </div>
-
-
                         <!-- daynamic mark and read  -->
-                        <div id="" class="  bg-[#12132D0D] col-span-2 lg:col-span-1">
-                            <div class="flex justify-between p-5">
-                                <h5 class="text-xl font-bold text-[#12132D]">Title</h5>
-                                <div class="flex gap-1">
-                                    <img src="./images/icon/Frame (5).png" alt="">
-                                    <p class="text-base font-normal">Mark as read <span id="increment">(0)</span></p>
+                        <div id="" class="  col-span-2 lg:col-span-1">
+                            <div class="bg-[#12132D0D] pb-2 ">
+
+                                <div class="flex justify-between p-5">
+                                    <h5 class="text-xl font-bold text-[#12132D]">Title</h5>
+                                    <div class="flex gap-1">
+                                        <img src="./images/icon/Frame (5).png" alt="">
+                                        <p class="text-base font-normal">Mark as read <span id="increment">(0)</span></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- daynamic title and follow  -->
-                            <div id="title-view">
-
-
+                                <!-- daynamic title and follow  -->
+                                <div id="title-view">
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -190,11 +190,11 @@
 
         </section>
     </main>
-    <footer>
-        <div class="flex justify-center items-center text-center w-full pt-12 lg:pt-24">
-            <div class="bg-[#f4f4f5] w-full pt-12 pb-7 lg:pb-12 lg:pt-24">
+    <footer class="bg-[#f4f4f5] mt-12 lg:mt-24">
+        <div class="flex justify-center  items-center text-center w-full ">
+            <div class=" w-full pt-12 pb-7 lg:pb-12 lg:pt-24">
                 <div class="flex  justify-center">
-                    <img src="./images/logo.png" alt="">
+                    <h1 class="text-4xl font-black  text-[#12132D]">AnTique</h1>
                 </div>
                 <p class="font-normal text-base mt-8 mb-5">Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has

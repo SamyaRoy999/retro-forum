@@ -12,10 +12,10 @@ const AllPostsCard = async (result) => {
 
 const AllCard = (allData) => {
     const letCard = document.getElementById("let-card");
+
     letCard.textContent = "";
     allData.forEach(item => {
         const div = document.createElement("div")
-        console.log(item);
         div.innerHTML = `<div
             class="card lg:card-side mb-5 md:h-[277px] lg:h-[277px]  bg-base-100 shadow-xl border border-cyan-950 p-4 lg:p-7">
             <div>
@@ -59,9 +59,12 @@ const AllCard = (allData) => {
         </div>`
 
         letCard.appendChild(div)
+
     });
+
     loddingSpener(false)
 }
+
 let count = 1;
 const hendelClick = (title, view) => {
     const incount = count++;
