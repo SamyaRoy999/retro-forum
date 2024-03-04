@@ -1,15 +1,18 @@
-const AllPostsCard = async () => {
+const AllPostsCard = async (result) => {
     const url = " https://openapi.programming-hero.com/api/retro-forum/posts";
-    const res = await fetch(url);
+    const cetagory = ` https://openapi.programming-hero.com/api/retro-forum/posts?category=${result}`
+    const res = await fetch(result ? cetagory : url);
     const data = await res.json();
     const allData = data.posts;
     AllCard(allData)
 }
 
 const AllCard = (allData) => {
-    // const letCardParent = document.getElementById("let-card-parent");
+    
     const letCard = document.getElementById("let-card");
+    letCard.textContent = "";
     allData.forEach(item => {
+        
         const div = document.createElement("div")
         console.log(item);
         div.innerHTML = `<div
@@ -80,5 +83,11 @@ const hendelClick = (title, view) => {
     
     `
     titleViewShow.appendChild(div)
+}
+
+const searchHebndel = () => {
+    const searchInput = document.getElementById("search-input");
+    const searchresult = searchInput.value;
+    AllPostsCard(searchresult)
 }
 AllPostsCard()

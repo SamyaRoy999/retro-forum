@@ -81,14 +81,13 @@
                     <p class="font-medium lg:text-xl text-white py-10">Share your favorite opinion and win and <br> wp
                         forum coffee mug!</p>
                     <div>
-
-                        <form action="" class="relative rounded-full lg:w-[400px]">
-                            <input type="text" placeholder=" Search here anything"
+                        <div action="" class="relative rounded-full lg:w-[400px]">
+                            <input type="text" id="search-input" placeholder=" Search here anything"
                                 class="input input-bordered rounded-full w-full max-w-[400px] py-7" />
-                            <button type="submit"
-                                class="btn absolute end-2.5 top-1  rounded-full border-slate-200  lg:px-8 bg-[#797DFC] text-white lg:text-lg font-bold ">Sign
-                                In</button>
-                        </form>
+                            <button 
+                                onclick="searchHebndel()"
+                                class="btn absolute end-2.5 top-1  rounded-full border-slate-200  lg:px-8 bg-[#797DFC] text-white lg:text-lg font-bold ">Search</button>
+                        </div>
                     </div>
                 </div>
 
@@ -308,7 +307,7 @@
         <!--  -->
 
         <div class="avatar relative">
-            <div class="h-4 w-4 rounded-full bg-red-600 absolute right-0 bottom-16 border border-neutral-50">
+            <div class="h-4 w-4 rounded-full bg-green-600 absolute right-0 bottom-16 border border-neutral-50">
 
             </div>
             <div class="w-24 rounded-full">
